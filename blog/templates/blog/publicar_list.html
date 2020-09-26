@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Django Girls blog</title>
+</head>
+<body>
+<div>
+	<h1><a href="">Django Girls Blog</a></h1>
+</div>
+
+	{% for post in posts %}
+<div>
+	<p>Data de publicacion: {{ post.data_publicar }}</p>
+	<h1><a href="">{{ post.titulo }}</a></h1>
+	<p>{{ post.texto|linebreaks }}</p>
+</div>
+{% endfor %}
+
+</body>
+</html>
